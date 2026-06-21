@@ -2,12 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import MyFristComponent from './components/MyFirstComponent';
 import EventBinding, {name1,name2,name3} from './components/EventBinding';
+import DisplayData from './components/DisplayData';
 
 function App() {
   return (
     <div className="App">
 
-    <EventBinding />
+   <DisplayData />
+
+    {/* <EventBinding /> */}
     {/* <h1>{name1}</h1>
     <h1>{name2}</h1>
     <h1>{name3}</h1> */}

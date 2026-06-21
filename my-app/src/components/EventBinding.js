@@ -3,9 +3,12 @@ import { useState } from "react";
 function EventBinding() {
     const [count, setCount] = useState(0);
     const [name, setName] = useState("Bhargava");
+    // let count = 0;
 
     function Increment(){
-        setCount(count + 1);
+          let inc = count+1;
+        setCount(inc);
+        // count=count+1;
         console.log("After count---",count);
     }
 

@@ -48,4 +48,24 @@ onChange
 
 onBlur
 
+useState:
+---------
+store data at component level
+data will change (useState) page will rerender(refresh web page)
+
+useEffect: to perform sideEffect useEffect
+---------
+
+useEffect(()=>{}) ---> without dependency Array
+
+useEffect(()=>{},[]) --> with dependency Array
+
+useEffect(()=>{},[withPareter]) --> with dependency Array and argument
+
+useEffect(()=>{
+
+    //clean function
+    return ()=>{}
+
+},[])
 
