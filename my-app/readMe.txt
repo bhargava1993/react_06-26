@@ -69,3 +69,94 @@ useEffect(()=>{
 
 },[])
 
+
+
+Routing:
+--------
+A house has many rooms:
+
+Living Room  -> Home Page  -> /home
+Kitchen -> About Page -> /about
+Bedroom -> Contact page ->/contactus
+
+
+you need a module:
+
+"react-router-dom",
+
+step1:
+BrowserRouter - it enabless Routing,
+Routes - Contains all routes, 
+Route-loads your component, 
+Link- changes URl
+
+-------------------------------
+
+<BrowserRouter>
+    <App />
+<BrowserRouter>
+
+
+
+--------------------------------------
+
+real dom:
+
+Virtual Dom: (VDOM) is a lightweight javascript reprasention of the real DOM
+(copy of real dom)--> react crates Virtual dom
+
+when props or state changes, react updates the virtual DOM first
+
+it will compars with your real dom, if any chnages find it will place into the real dom.
+
+Reconciliation:
+---------------
+Reconciliation is the process react uses to compare the 
+old virtual dom with the new virtual dom and detarmine what gets changed:
+
+compares: (Diffing algorithm)
+
+
+
+simple flow:
+------------------
+state or props change
+    |
+new virtual dom
+    |
+Reconciliation process (diffing algorithm)
+    |
+update only changed parts
+    |
+real dom
+
+
+
+axios:  It is a module you can communicate with
+ server or apis by sedinh http request
+-------------------------------
+Http methods:
+
+post
+put
+patch
+get
+delete
+----------------------------
+
+lifting state up:
+-----------------
+
+In react, "lifting state up" is a pattren where you move 
+shared state from child components to their neraset parent 
+component, so mulitple components can access and stay 
+synchronized with same data.
+
+
+useState - local to component
+
+global state - 
+
+context api (or)
+redux
+zustand

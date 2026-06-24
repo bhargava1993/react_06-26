@@ -20,6 +20,7 @@ function EventBinding() {
      function enterName(e){
         console.log("e--------",e)
         setName(e.target.value)
+        
     }
     
 
