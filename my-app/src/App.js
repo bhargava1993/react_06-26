@@ -12,51 +12,53 @@ import FallBackPage from './components/FallBackPage';
 
 import ProductList from './LiftingStateUP/ProductList';
 import CartSummary from './LiftingStateUP/CartSummary';
+import LifeCycleHooks from './LiftingStateUP/LifeCycleHooks';
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
-  console.log("cartCount----",cartCount)
+  // console.log("cartCount----",cartCount)
 
-  // return(
-  //   <>
-  //   <ProductList setCartCount={setCartCount}/>
-  //   <CartSummary cartCount={cartCount} />
-  //    </>
-  // )
-
-
-  return (
-    // it enabless Routing
-    <BrowserRouter>
-
-
-      {/* <nav>
-        <Link to="/">Home</Link>
-        <br></br>
-        <Link to="/home">Home</Link>
-        <br></br>
-        <Link to="/about">About</Link>
-        <br></br>
-        <Link to="/contact">contact</Link>
-      </nav> */}
-
-      <Routes>
-
-        <Route path="/" element={<EventBinding />}></Route>
-        
-        <Route path="/products" element={<ProductList setCartCount={setCartCount}/>} ></Route>
-        <Route path="/cart" element={<CartSummary cartCount={cartCount} />} ></Route>
-
-        
-        <Route path="/home" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-
-        <Route path="*" element={<FallBackPage />}></Route>
-      </Routes>
-
-    </BrowserRouter>
+  return(
+    <>
+    <LifeCycleHooks />
+    {/* <ProductList setCartCount={setCartCount}/>
+    <CartSummary cartCount={cartCount} /> */}
+     </>
   )
+
+
+  // return (
+  //   // it enabless Routing
+  //   <BrowserRouter>
+
+
+  //     {/* <nav>
+  //       <Link to="/">Home</Link>
+  //       <br></br>
+  //       <Link to="/home">Home</Link>
+  //       <br></br>
+  //       <Link to="/about">About</Link>
+  //       <br></br>
+  //       <Link to="/contact">contact</Link>
+  //     </nav> */}
+
+  //     <Routes>
+
+  //       <Route path="/" element={<EventBinding />}></Route>
+        
+  //       <Route path="/products" element={<ProductList setCartCount={setCartCount}/>} ></Route>
+  //       <Route path="/cart" element={<CartSummary cartCount={cartCount} />} ></Route>
+
+        
+  //       <Route path="/home" element={<Home />}></Route>
+  //       <Route path="/about" element={<About />}></Route>
+  //       <Route path="/contact" element={<Contact />}></Route>
+
+  //       <Route path="*" element={<FallBackPage />}></Route>
+  //     </Routes>
+
+  //   </BrowserRouter>
+  // )
 
   // return (
   //   <div className="App">

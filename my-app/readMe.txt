@@ -160,3 +160,52 @@ global state -
 context api (or)
 redux
 zustand
+
+-----------------------
+
+React functional component lifeCycle:
+-------------------------------------
+
+4 stages:
+---------
+1. Rendaring - display data to ui
+
+2. Mounting - dispalying data to screen for the first time 
+
+3. updating - state/props
+
+4. unmounting - removing component form screen
+
+
+component:
+Rendaring --> Mounting --> updateing --> unmounting
+
+useEffect: to perform sideEffect useEffect
+---------
+
+side effects are nothig but below this:
+---------------------------------------
+
+1. fetching data from api
+2. setting timers
+3. Adding event listenrs
+4. updating the document 
+5. cleanup the resources
+
+useEffect(()=>{}) ---> without dependency Array
+
+useEffect(()=>{},[]) --> with dependency Array
+
+useEffect(()=>{},[withPareter]) --> with dependency Array and argument
+
+useEffect(()=>{
+
+    //clean function
+    return ()=>{}
+
+},[])
+-----------------------
+
+useEffectLayout(): synchronous way
+----------------
+
