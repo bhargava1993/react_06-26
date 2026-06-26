@@ -13,17 +13,26 @@ import FallBackPage from './components/FallBackPage';
 import ProductList from './LiftingStateUP/ProductList';
 import CartSummary from './LiftingStateUP/CartSummary';
 import LifeCycleHooks from './LiftingStateUP/LifeCycleHooks';
+import Timer from './LiftingStateUP/Timer';
+import SignUpForm from './components/froms/SignUpForm';
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
   // console.log("cartCount----",cartCount)
+  const [show, setShow] = useState(true);
 
-  return(
+  return (
     <>
-    <LifeCycleHooks />
-    {/* <ProductList setCartCount={setCartCount}/>
+    <SignUpForm />
+      {/* <button onClick={() => setShow(!show)}>
+        {show ? "Hide Timer" : "Show Timer"}
+        {show && <Timer />}
+      </button> */}
+
+      {/* <LifeCycleHooks /> */}
+      {/* <ProductList setCartCount={setCartCount}/>
     <CartSummary cartCount={cartCount} /> */}
-     </>
+    </>
   )
 
 
@@ -45,11 +54,11 @@ function App() {
   //     <Routes>
 
   //       <Route path="/" element={<EventBinding />}></Route>
-        
+
   //       <Route path="/products" element={<ProductList setCartCount={setCartCount}/>} ></Route>
   //       <Route path="/cart" element={<CartSummary cartCount={cartCount} />} ></Route>
 
-        
+
   //       <Route path="/home" element={<Home />}></Route>
   //       <Route path="/about" element={<About />}></Route>
   //       <Route path="/contact" element={<Contact />}></Route>
