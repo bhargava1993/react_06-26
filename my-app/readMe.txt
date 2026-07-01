@@ -209,3 +209,85 @@ useEffect(()=>{
 useEffectLayout(): synchronous way
 ----------------
 
+------------------------------------
+function add(a,b){
+return a+b;
+}
+
+add(2,3)
+
+--------------------------------
+
+useMemo() --> M = Memory of a value
+
+syntax:
+-------------
+useMemo(()=>{
+
+},[dependency])
+
+
+useCallback --> callback = Memory of a function
+
+syntax:
+-------------
+useCallback(()=>{
+
+},[dependency])
+
+------------------------------------
+
+useRef:
+-------
+
+const myRef = useRef(initialValue);
+
+it returns an object like:
+
+{
+    current: initialValue
+}
+---------------------------------
+class room board: - useState --> re-render
+----------------
+
+note book: --> useRef --> doesn't re-render
+---------
+
+forms:
+------
+1. controlled From --> useState ->
+
+advantages:
+-----------
+1. easy validation
+2. easy enable/disable buttons
+3. instant feedback (e.g. password strent)
+4. easier to debug
+5. preffered for most rect application
+
+disAdvantages:
+--------------
+1.more code
+2.Every keystroke causes a stete update and re-render
+-------------------------------------------
+
+2. unControlled From --> useRef
+
+advantages:
+------------
+1. less code
+2. useful simple forms 
+3. every keyStore page dosen't re-render
+
+disAdvantages:
+--------------
+1. harder to debugging
+2. hard to write validation
+3. harder to keep the UI synchronized with input
+4. Not ideal for complex forms
+
+
+
+
+

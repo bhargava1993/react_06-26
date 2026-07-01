@@ -15,15 +15,32 @@ import CartSummary from './LiftingStateUP/CartSummary';
 import LifeCycleHooks from './LiftingStateUP/LifeCycleHooks';
 import Timer from './LiftingStateUP/Timer';
 import SignUpForm from './components/froms/SignUpForm';
+import UseMemo from './components/UseMemo';
+import UseCallback from './components/UseCallback';
+import Focus from './components/UseRef/Focus';
+import Counter from  './components/UseRef/Counter';
+import FromRef from './components/UseRef/FromRef';
+import ControlledFrom from './components/UseRef/ControlledFrom';
 
 function App() {
-  const [cartCount, setCartCount] = useState(0);
+  // const [cartCount, setCartCount] = useState(0);
   // console.log("cartCount----",cartCount)
-  const [show, setShow] = useState(true);
+  // const [show, setShow] = useState(true);
 
   return (
     <>
-    <SignUpForm />
+
+  {/* useRef examples */}
+  {/* <ControlledFrom /> */}
+    <FromRef />
+    {/* <Counter /> */}
+    {/* <Focus /> */}
+
+    {/* <UseCallback /> */}
+    {/* <UseMemo /> */}
+
+    {/* <SignUpForm /> */}
+
       {/* <button onClick={() => setShow(!show)}>
         {show ? "Hide Timer" : "Show Timer"}
         {show && <Timer />}

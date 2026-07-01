@@ -34,7 +34,10 @@ function SignUpForm() {
     return (
         <form onSubmit={handleSubmit}>
             <label>Name : </label>
-            <input value={name} onChange={(e) => setName(e.target.value)} />
+            <input value={name} onChange={(e) => {
+                console.log("name---",e.target.value);
+                setName(e.target.value)
+            }} />
             <br></br>
             <label>Email : </label>
             <input value={email} onChange={(e) => setEmail(e.target.value)} />
