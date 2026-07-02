@@ -287,7 +287,22 @@ disAdvantages:
 3. harder to keep the UI synchronized with input
 4. Not ideal for complex forms
 
+-------------------------------------
 
+prop drilling down:
 
+prop drilling happens when data is passed through multiple
+intermediate components that don't use it, just so a deeply 
+nested component can access it.
 
+This makes the code harder to maintain,
+react has introduced Contect API solves this problem
+
+Parent
+  |
+Child
+  |
+GrandChild
+  |
+GrandChild2
 

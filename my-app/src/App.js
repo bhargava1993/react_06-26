@@ -21,6 +21,8 @@ import Focus from './components/UseRef/Focus';
 import Counter from  './components/UseRef/Counter';
 import FromRef from './components/UseRef/FromRef';
 import ControlledFrom from './components/UseRef/ControlledFrom';
+import MultiInputFrom from './components/froms/MultiInputForm';
+import Parent from './components/PropsDrillingDown/Parent';
 
 function App() {
   // const [cartCount, setCartCount] = useState(0);
@@ -30,9 +32,14 @@ function App() {
   return (
     <>
 
+   {/* props PropsDrillingDown */}
+    <Parent />
+
+    {/* <MultiInputFrom /> */}
+
   {/* useRef examples */}
   {/* <ControlledFrom /> */}
-    <FromRef />
+    {/* <FromRef /> */}
     {/* <Counter /> */}
     {/* <Focus /> */}
 
